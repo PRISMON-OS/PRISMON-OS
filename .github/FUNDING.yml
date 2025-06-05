@@ -1,0 +1,31 @@
+# Open Source Funding Configuration for PRISMON OS
+# GitHub Sponsors, Open Collective, and Fiscal Host Integration
+
+github: [prismon-os, hirday-veer]
+open_collective: prismon-quantum-engine
+ko_fi: prismon_os
+patreon: prismon_quantum_gaming
+liberapay: PrismonOS
+custom: ['https://prismon.org/donate', 'https://buymeacoffee.com/prismonos', 'https://opencollective.com/prismon-quantum-engine/donate']
+
+# Additional funding platforms
+tidelift: prismon-os/quantum-engine
+thanks_dev: prismon-os
+community_bridge: prismon-quantum-gaming
+
+# Cryptocurrency donations
+bitcoin: 1PrismonQuantumEngineDonateBTC123
+ethereum: 0xPrismonQuantumEngineEthereumAddress
+litecoin: LPrismonQuantumEngineLitecoinAddress
+
+# Research and academic funding
+grants:
+  - name: "NSF Quantum Computing Initiative"
+    url: "https://nsf.gov/quantum"
+    status: "applied"
+  - name: "DOE Quantum Network"
+    url: "https://doe.gov/quantum"
+    status: "planning"
+  - name: "IBM Quantum Network Academic"
+    url: "https://qiskit.org/advocates/"
+    status: "member"

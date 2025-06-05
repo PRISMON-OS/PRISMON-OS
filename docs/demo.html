@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRISMON OS Demo - Revolutionary Quantum Gaming OS</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0f172a;
+            color: #f1f5f9;
+            padding: 2rem;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .demo-container {
+            max-width: 800px;
+            text-align: center;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid #1e293b;
+            border-radius: 20px;
+            padding: 3rem;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        p {
+            color: #94a3b8;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .demo-video {
+            width: 100%;
+            max-width: 640px;
+            height: 360px;
+            background: linear-gradient(135deg, #1e293b, #334155);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem auto;
+            border: 2px solid #6366f1;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .play-button {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(99, 102, 241, 0.3);
+        }
+
+        .play-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 35px rgba(99, 102, 241, 0.4);
+        }
+
+        .features-list {
+            text-align: left;
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+
+        .features-list h3 {
+            color: #6366f1;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .features-list ul {
+            list-style: none;
+        }
+
+        .features-list li {
+            padding: 0.5rem 0;
+            position: relative;
+            padding-left: 2rem;
+        }
+
+        .features-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.1);
+            color: #f1f5f9;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-top: 2rem;
+        }
+
+        .back-button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .demo-text {
+            background: rgba(6, 182, 212, 0.1);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1>🎮 PRISMON OS Demo</h1>
+        <p>Experience the revolutionary quantum gaming operating system in action</p>
+
+        <div class="demo-video">
+            <div class="play-button" onclick="startDemo()">
+                ▶
+            </div>
+        </div>
+
+        <div class="demo-text">
+            <p><strong>Demo Features:</strong> Watch PRISMON OS boot in under 1 second, see the quantum gaming engine in action, and experience the self-evolving AI interface.</p>
+        </div>
+
+        <div class="features-list">
+            <h3>What You'll See in the Demo:</h3>
+            <ul>
+                <li>Lightning-fast boot sequence (&lt;1 second)</li>
+                <li>Quantum boot animation with themes</li>
+                <li>Interactive 3D gaming environment</li>
+                <li>Self-evolving AI learning patterns</li>
+                <li>Real-time performance metrics</li>
+                <li>Payment integration showcase</li>
+                <li>Developer tools and quantum engine</li>
+            </ul>
+        </div>
+
+        <a href="index.html" class="back-button">
+            ← Back to Home
+        </a>
+    </div>
+
+    <script>
+        function startDemo() {
+            const playButton = document.querySelector('.play-button');
+            const demoVideo = document.querySelector('.demo-video');
+            
+            playButton.innerHTML = '⏸';
+            demoVideo.style.background = 'linear-gradient(135deg, #0f172a, #1e293b)';
+            
+            // Simulate demo content
+            const demoSteps = [
+                'Initializing PRISMON OS...',
+                'Loading Quantum Gaming Engine...',
+                'Activating Self-Evolving AI...',
+                'Boot Complete! Welcome to the Future.',
+                'Demo: Experience the quantum-inspired interface'
+            ];
+            
+            let step = 0;
+            playButton.innerHTML = demoSteps[step];
+            playButton.style.fontSize = '1rem';
+            playButton.style.width = '200px';
+            playButton.style.height = '60px';
+            playButton.style.borderRadius = '8px';
+            
+            const interval = setInterval(() => {
+                step++;
+                if (step < demoSteps.length) {
+                    playButton.innerHTML = demoSteps[step];
+                } else {
+                    clearInterval(interval);
+                    playButton.innerHTML = '🚀 Download Now';
+                    playButton.onclick = () => window.location.href = 'index.html#download';
+                }
+            }, 2000);
+        }
+    </script>
+</body>
+</html>

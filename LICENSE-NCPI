@@ -1,0 +1,205 @@
+PRISMON OS Quantum Gaming Engine - Non-Commercial Public Interest (NCPI) License v1.0
+
+Copyright (c) 2024 PRISMON OS Contributors
+https://prismon.org | https://github.com/prismon-os/quantum-engine
+
+=============================================================================
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+=============================================================================
+
+1. DEFINITIONS
+
+"License" shall mean the terms and conditions for use, reproduction, and 
+distribution as defined by Sections 1 through 9 of this document.
+
+"Licensor" shall mean the copyright owner or entity authorized by the 
+copyright owner that is granting the License.
+
+"You" (or "Your") shall mean an individual or Legal Entity exercising 
+permissions granted by this License.
+
+"Source" form shall mean the preferred form for making modifications, 
+including but not limited to software source code, documentation source, 
+and configuration files.
+
+"Object" form shall mean any form resulting from mechanical transformation 
+or translation of a Source form, including but not limited to compiled 
+object code, generated documentation, and conversions to other media types.
+
+"Work" shall mean the work of authorship, whether in Source or Object form, 
+made available under the License, as indicated by a copyright notice that 
+is included in or attached to the work.
+
+"Derivative Works" shall mean any work, whether in Source or Object form, 
+that is based upon (or derived from) the Work and for which the editorial 
+revisions, annotations, elaborations, or other modifications represent, as 
+a whole, an original work of authorship.
+
+"Commercial Use" shall mean any use of the Work that is primarily intended 
+for or directed toward commercial advantage or monetary compensation, 
+including but not limited to:
+- Incorporating the Work into a product or service that is sold
+- Using the Work to provide services for a fee
+- Distributing the Work as part of a commercial software package
+- Using the Work in any revenue-generating activity
+
+"Non-Commercial Use" shall mean any use of the Work that is not Commercial 
+Use, including but not limited to:
+- Personal projects and learning
+- Academic research and education
+- Non-profit organizational activities
+- Open source project development
+- Government and public sector use (non-revenue generating)
+
+2. GRANT OF COPYRIGHT LICENSE FOR NON-COMMERCIAL USE
+
+Subject to the terms and conditions of this License, each Contributor hereby 
+grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, 
+irrevocable copyright license to use, reproduce, prepare Derivative Works of, 
+publicly display, publicly perform, sublicense, and distribute the Work and 
+such Derivative Works in Source or Object form, solely for Non-Commercial Use.
+
+3. COMMERCIAL USE RESTRICTIONS
+
+Commercial Use of the Work requires a separate commercial license from the 
+Licensor. You may not use the Work for Commercial Use without obtaining such 
+a license. Commercial licenses are available at:
+
+https://prismon.org/licensing
+
+Commercial license fees directly fund the continued development of this open 
+source project through our fiscal host partnerships with Open Source 
+Collective and Software Freedom Conservancy.
+
+4. REDISTRIBUTION AND ATTRIBUTION
+
+You may reproduce and distribute copies of the Work or Derivative Works 
+thereof for Non-Commercial Use, provided that You meet the following conditions:
+
+(a) You must give any other recipients of the Work or Derivative Works a 
+copy of this License;
+
+(b) You must cause any modified files to carry prominent notices stating 
+that You changed the files;
+
+(c) You must retain, in the Source form of any Derivative Works that You 
+distribute, all copyright, patent, trademark, and attribution notices from 
+the Source form of the Work;
+
+(d) You must include a prominent notice that the Work is licensed under this 
+NCPI License and provide a link to obtain the complete license terms.
+
+5. CONTRIBUTION BACK REQUIREMENT
+
+If You distribute Derivative Works of the Work, You must make the Source form 
+of such Derivative Works available under the terms of this License. This 
+includes:
+
+(a) Bug fixes and security patches
+(b) Performance improvements and optimizations
+(c) New features and enhancements
+(d) Documentation improvements
+
+Contributions must be submitted via the project's official contribution 
+channels as specified at: https://prismon.org/contribute
+
+6. PATENT GRANT
+
+Each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, 
+no-charge, royalty-free, irrevocable (except as stated in this section) 
+patent license to make, have made, use, offer to sell, sell, import, and 
+otherwise transfer the Work for Non-Commercial Use, where such license 
+applies only to those patent claims licensable by such Contributor that are 
+necessarily infringed by their Contribution(s) alone or by combination of 
+their Contribution(s) with the Work to which such Contribution(s) was 
+submitted.
+
+7. TRADEMARKS
+
+This License does not grant permission to use the trade names, trademarks, 
+service marks, or product names of the Licensor, except as required for 
+reasonable and customary use in describing the origin of the Work and 
+reproducing the content of the NOTICE file.
+
+8. DISCLAIMER OF WARRANTY
+
+Unless required by applicable law or agreed to in writing, Licensor provides 
+the Work on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, 
+either express or implied, including, without limitation, any warranties or 
+conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A 
+PARTICULAR PURPOSE. You are solely responsible for determining the 
+appropriateness of using or redistributing the Work and assume any risks 
+associated with Your exercise of permissions under this License.
+
+9. LIMITATION OF LIABILITY
+
+In no event and under no legal theory, whether in tort (including negligence), 
+contract, or otherwise, unless required by applicable law (such as deliberate 
+and grossly negligent acts) or agreed to in writing, shall any Contributor be 
+liable to You for damages, including any direct, indirect, special, incidental, 
+or consequential damages of any character arising as a result of this License 
+or out of the use or inability to use the Work.
+
+10. ACCEPTING WARRANTY OR ADDITIONAL LIABILITY
+
+When redistributing the Work or Derivative Works thereof, You may choose to 
+offer, and charge a fee for, acceptance of support, warranty, indemnity, or 
+other liability obligations and/or rights consistent with this License. 
+However, in accepting such obligations, You may act only on Your own behalf 
+and on Your sole responsibility, not on behalf of any other Contributor.
+
+11. FISCAL HOST AND COMMUNITY GOVERNANCE
+
+This project operates under the fiscal sponsorship of Open Source Collective 
+(501c3) and other qualified fiscal hosts. All commercial license revenue 
+directly supports the continued development and maintenance of this open 
+source project through transparent, community-governed allocation.
+
+Community governance follows the democratic principles outlined in:
+https://prismon.org/governance
+
+Financial transparency and budget allocation decisions are publicly available:
+https://opencollective.com/prismon-quantum-engine
+
+=============================================================================
+APPENDIX: How to apply the NCPI License to your work
+=============================================================================
+
+To apply the NCPI License to your work, attach the following boilerplate 
+notice, with the fields enclosed by brackets "[]" replaced with your own 
+identifying information:
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Non-Commercial Public Interest (NCPI) License v1.0;
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       https://prismon.org/licenses/NCPI-1.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+=============================================================================
+COMMERCIAL LICENSING
+=============================================================================
+
+For commercial use of PRISMON OS Quantum Gaming Engine, please contact:
+- Email: licensing@prismon.org
+- Website: https://prismon.org/commercial-licensing
+- Discord: https://discord.gg/prismon-quantum
+
+Commercial licensing options:
+- Startup License: $0-10,000/year (revenue < $100K)
+- Professional License: $10,000-50,000/year (revenue < $1M)
+- Enterprise License: $50,000-500,000/year (unlimited revenue)
+- OEM License: Custom pricing for hardware integration
+
+All commercial license revenue supports open source development through our 
+fiscal host partnerships. 15% of commercial revenue is distributed directly 
+to open source contributors based on their contributions.
+
+=============================================================================

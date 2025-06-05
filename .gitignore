@@ -1,0 +1,56 @@
+# Build directories
+build-*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+Testing/
+
+# Executables
+PrismonOS
+kernel_tests
+memory_tests
+simple_test_runner
+
+# ISO files (keep only the final ones for website)
+*.iso
+!docs/prismon-quantum.iso
+!docs/prismon-varint.iso
+!docs/prismon-full.iso
+!docs/prismon-community-fast.iso
+!docs/prismon-developer-fast.iso
+# Large ISOs (>100MB) excluded due to GitHub limits
+docs/prismon-quantum-large.iso
+docs/prismon-quantum-fast.iso
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Object files
+*.o
+*.obj
+
+# Shared libraries
+*.so
+*.dylib
+*.dll
+
+# Archives
+*.a
+*.lib
+
+# Other
+.DS_Store
+Thumbs.db
