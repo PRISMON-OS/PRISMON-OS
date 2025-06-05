@@ -108,10 +108,6 @@ deploy_github_pages() {
     
     # Copy build artifacts
     cp -r "$BUILD_DIR"/* "$TMP_DIR"/
-    # Ensure CNAME
-    if [ -f "$WEBSITE_DIR/CNAME" ]; then
-        cp "$WEBSITE_DIR/CNAME" "$TMP_DIR"/
-    fi
     
     # Commit and push
     cd "$TMP_DIR"
@@ -248,11 +244,3 @@ fi
 
 show_tips
 show_menu
-
-# Main script execution
-create_build # Ensure create_build is called
-validate_build # Ensure validate_build is called
-deploy_github_pages
-
-echo ""
-echo "🎉 PRISMON OS Website Deployment Finished Successfully!"
