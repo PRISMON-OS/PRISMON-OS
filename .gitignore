@@ -1,0 +1,14 @@
+# Ignore USB backup directories to avoid permission issues
+usb_backups/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore temporary files
+*.tmp
+*.temp
+*~
+
+# Ignore log files
+*.log
