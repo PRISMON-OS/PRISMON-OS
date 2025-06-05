@@ -24,17 +24,16 @@ prismon-quantum-large.iso      (5GB)   - Quantum Large Edition
 
 ---
 
-## 🌐 **Website Download URLs** (When Deployed)
-
-Replace `your-domain.com` with your actual domain:
+## 🌐 **Website Download URLs** (GitHub Pages)
 
 ### Direct Download Links:
-- **Community:** `https://your-domain.com/prismon-community-fast.iso`
-- **Developer:** `https://your-domain.com/prismon-developer-fast.iso`
-- **VARINT AI:** `https://your-domain.com/prismon-varint.iso`
-- **Full Dist:** `https://your-domain.com/prismon-full.iso`
-- **Quantum Fast:** `https://your-domain.com/prismon-quantum-fast.iso`
-- **Quantum Large:** `https://your-domain.com/prismon-quantum-large.iso`
+- **Community:** `https://prismon-os.github.io/PRISMON-OS/prismon-community-fast.iso`
+- **Developer:** `https://prismon-os.github.io/PRISMON-OS/prismon-developer-fast.iso`
+- **VARINT AI:** `https://prismon-os.github.io/PRISMON-OS/prismon-varint.iso`
+- **Full Dist:** `https://prismon-os.github.io/PRISMON-OS/prismon-full.iso`
+- **Quantum:** `https://prismon-os.github.io/PRISMON-OS/prismon-quantum.iso`
+- **Quantum Large:** `(Coming Soon - Will be available via GitHub Releases due to size limits)`
+- **Quantum Fast:** `(Coming Soon - Will be available via GitHub Releases due to size limits)`
 
 ---
 
