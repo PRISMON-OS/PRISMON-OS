@@ -3,103 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRISMON OS - Advanced Operating System</title>
+    <title>OS Universe - Dynamic Operating Systems Showcase</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Segoe UI', sans-serif;
+            font-family: 'Arial', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            overflow-x: hidden;
             color: white;
-            min-height: 100vh;
         }
-        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
-        header {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            padding: 1rem 0;
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        h1 { font-size: 3rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); }
-        .hero { text-align: center; padding: 4rem 0; }
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 4rem 0;
-        }
-        .feature-card {
-            background: rgba(255,255,255,0.1);
-            padding: 2rem;
-            border-radius: 15px;
-            text-align: center;
-        }
-        .feature-icon { font-size: 3rem; margin-bottom: 1rem; }
-        .section {
-            background: rgba(255,255,255,0.05);
-            margin: 2rem 0;
-            padding: 3rem;
-            border-radius: 20px;
-        }
-        .download-btn {
-            background: rgba(255,255,255,0.2);
-            color: white;
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(20px);
             padding: 1rem 2rem;
-            text-decoration: none;
-            border-radius: 10px;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .nav-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .cta-button {
             display: inline-block;
-            margin: 0.5rem;
+            padding: 1rem 2rem;
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .os-grid {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .os-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.5s ease;
+            cursor: pointer;
+        }
+
+        .os-card:hover {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .os-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .windows { background: linear-gradient(45deg, #0078d4, #106ebe); }
+        .macos { background: linear-gradient(45deg, #007aff, #5ac8fa); }
+        .linux { background: linear-gradient(45deg, #fcc624, #f57c00); }
+
+        .os-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .os-card p {
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+
+        .footer {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .os-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>PRISMON OS</h1>
-            <p>The Future of Operating Systems</p>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">OS Universe</div>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
-        <section class="hero">
-            <h2>Advanced AI Integration, Quantum Computing Ready, Unparalleled Security</h2>
-        </section>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>OS Universe</h1>
+            <p>Explore the dynamic world of operating systems. From Windows to Linux, discover the power of modern computing platforms.</p>
+            <a href="#systems" class="cta-button">Explore Systems</a>
+        </div>
+    </section>
 
-        <section class="features">
-            <div class="feature-card">
-                <div class="feature-icon">🤖</div>
-                <h3>AI-Powered Intelligence</h3>
-                <p>Built-in artificial intelligence that learns from your usage patterns.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">⚡</div>
-                <h3>Quantum Computing Support</h3>
-                <p>First consumer OS with native quantum computing integration.</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🔒</div>
-                <h3>Advanced Security</h3>
-                <p>Military-grade encryption and real-time threat detection.</p>
-            </div>
-        </section>
+    <section class="os-grid" id="systems">
+        <div class="os-card">
+            <div class="os-icon windows">🪟</div>
+            <h3>Windows</h3>
+            <p>Microsoft's flagship operating system powering billions of devices worldwide.</p>
+        </div>
 
-        <section class="section">
-            <h2>Superintelligent Agents</h2>
-            <p>PRISMON OS features advanced AI agents that understand complex tasks and autonomously manage system resources.</p>
-        </section>
+        <div class="os-card">
+            <div class="os-icon macos">🍎</div>
+            <h3>macOS</h3>
+            <p>Apple's elegant operating system designed for seamless user experience.</p>
+        </div>
 
-        <section class="section">
-            <h2>Download PRISMON OS</h2>
-            <div style="text-align: center;">
-                <a href="#" class="download-btn">💿 ISO Image</a>
-                <a href="#" class="download-btn">☁️ Cloud Installer</a>
-                <a href="#" class="download-btn">🔧 Developer Preview</a>
-            </div>
-        </section>
-    </main>
+        <div class="os-card">
+            <div class="os-icon linux">🐧</div>
+            <h3>Linux</h3>
+            <p>Open-source powerhouse offering unlimited customization and control.</p>
+        </div>
+    </section>
 
-    <footer style="text-align: center; padding: 2rem; margin-top: 4rem; background: rgba(0,0,0,0.2);">
-        <p>&copy; 2025 PRISMON OS. All rights reserved.</p>
+    <footer class="footer">
+        <p>&copy; 2025 OS Universe. Exploring the future of computing.</p>
     </footer>
+
+    <script>
+        document.querySelector('.cta-button').addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector('#systems').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    </script>
+<!-- PRISMON OS Website v20250605_111852 - Built Thu 05 Jun 2025 11:18:57 AM IST -->
 </body>
 </html>
